@@ -1,0 +1,39 @@
+# Ignore node_modules (caso use Node.js)
+node_modules/
+
+# Ignore dependências do Python
+venv/
+.env/
+*.pyc
+__pycache__/
+
+# Ignorar IDEs
+.vscode/
+.idea/
+
+# Relatórios de testes
+allure-results/
+allure-report/
+test-output/
+reports/
+logs/
+
+# Arquivos temporários
+*.log
+*.tmp
+*.bak
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+
+# Build
+dist/
+build/
+
+# Configurações locais
+*.local
+*.env
+
+# Selenium / WebDriver downloads
+drivers/

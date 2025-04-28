@@ -1,0 +1,35 @@
+name: Cypress Tests
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+jobs:
+  cypress-run:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout do repositório
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'  # coloque a versão que você usa no projeto
+
+      - name: Instalar dependências
+        run: npm install
+
+      - name: Rodar testes Cypress
+        run: npx cypress run
+
+      - name: Upload de screenshots e vídeos de falhas (opcional)
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: cypress-artifacts
+          path: |
+            cypress/screenshots
+            cypress/videos
