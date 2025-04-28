@@ -54,3 +54,6 @@
 
     
 ## MELHORIA: ADICIONAR OPÇÃO PARA ESPIAR SENHA NO LOGIN NA VERSÃO MOBILE
+
+## BUG: AO ALTERAR SENHA MESMO DIGITANDO SENHA VALIDA SISTEMA NÃO RECONEHCIA
+    Esse bug devido a falta de tempo não consegui maiores informações

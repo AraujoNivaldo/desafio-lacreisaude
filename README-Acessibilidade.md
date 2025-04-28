@@ -64,9 +64,6 @@ Cada execução gera um arquivo diferente, mantendo o histórico de testes.
   - A pontuação geral de acessibilidade
   - Problemas detectados (e suas localizações)
   - Sugestões de correção
-- **Priorizar correções** de erros mais críticos (ex: falha de navegação, contraste de cores insuficiente, falta de rótulos em botões/campos).
-- **Acompanhar evolução** ao longo do tempo comparando relatórios de diferentes datas.
-
 ---
 
 ## Tecnologias utilizadas
@@ -74,12 +71,5 @@ Cada execução gera um arquivo diferente, mantendo o histórico de testes.
 - [Node.js](https://nodejs.org/)
 - [Lighthouse CLI](https://github.com/GoogleChrome/lighthouse)
 - [Google Chrome](https://www.google.com/chrome/)
-
----
-
-## Observações
-
-- Este teste é focado apenas na **categoria de Acessibilidade**.
-- Para auditorias completas (Performance, SEO, PWA, Best Practices), ajustes podem ser feitos no script.
 
 ---
